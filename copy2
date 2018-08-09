@@ -1,0 +1,105 @@
+$(document).ready(function() {
+    var _animal_choose =0;
+
+  $("#turtles").click(function(){
+    // $("#snakes").hide();
+    // $("#insects").hide();
+    //  alter("turtles RUN")
+    $("#turtles_info").toggle();
+      _animal_choose=1;
+
+  });
+
+  $("#snakes").click(function(){
+    // $("#turtles").hide();
+    // $("#insects").hide();
+    $("#snakes_info").toggle();
+     _animal_choose=2;
+  });
+  $("#insects").click(function(){
+    // $("#snakes").hide();
+    // $("#turtles").hide();
+    $("#insects_info").toggle();
+    _animal_choose=3;
+  });
+  });
+
+      if(){
+
+      }
+
+
+      // if(_animal_choose=1){
+      //   $("#snakes").hide();
+      //   $("#insects").hide();
+      // }else if (_animal_choose=2) {
+      //   $("#").hide();
+      //
+      // }
+////////
+
+
+#turtles_info{
+    display: none;
+}
+#snakes_info {
+    display: none;
+}
+#insects_info{
+  display: none;
+}
+
+
+h3 {
+  cursor: pointer;
+}
+h3:hover{
+  text-decoration: underline;
+  color: red
+}
+///////////
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Animal Wiki</title>
+  </head>
+  <body>
+    <div class="container">
+    <h2>which animal would you like to learn about?</h2>
+
+        <div id="turtles">
+            <h4>turtles<h4>
+                <div id="turtles_info">
+                  <p>urtles are diapsids of the order Testudi</p>
+                  <img src="img/turtle.jpg" alt="turtle" width="300px">
+                </div>
+        </div>
+
+        <div id="snakes">
+            <h4>Snakes<h4>
+              <div id="snakes_info">
+                <p>urtles are </p>
+                <img src="img/snake.jpg" alt="snake" width="300px">
+              </div>
+        </div>
+
+
+
+      <div id="insects">
+        <h4>Insects<h4>
+            <div id="insects_info">
+                <p>arliest known members of this group date from</p>
+                <img src="img/insect.jpg" alt="insect" width="300px">
+            </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
